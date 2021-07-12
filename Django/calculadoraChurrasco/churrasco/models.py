@@ -12,3 +12,6 @@ class Pedido (models.Model):
     quantidade = models.DecimalField("Quantidade",decimal_places=2, max_digits=9)
     preco = models.DecimalField("Preço médio",decimal_places=2, max_digits=9)
     cidade = models.CharField("Cidade", max_length=500)
+
+    
+

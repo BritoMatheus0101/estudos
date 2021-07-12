@@ -6,6 +6,19 @@
 </head>
 <body>
     <h1>TESTE</h1>
+    <label>Escolha o produto</label>
+    </br>
+    <select name="Carnes">
+        {% for produto in produtos%}
+            <option>{{produto.nome}}</option>   
+        {% endfor %}
+    </select>
+    </br>
+    <p>Quantidade</p> 
+    <input type="text" label="Quantidade">
+    </br>
+    <p>Preço medio na sua cidade</p>
+    <input type="text" label="preço medio">
 </body>
 
 
