@@ -1,24 +1,28 @@
+{% load static%}
 <!DOCTYPE html>
 <html lang = "pt-br">
 <head>
     <meta charset= "UTF-8"/>
     <title>Index churrasco</title>
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
 </head>
 <body>
     <h1>Gerador de listas para churrasco</h1>
-    <label>Escolha o produto</label>
-    </br>
-    <select name="Carnes">
-        {% for produto in produtos%}
-            <option>{{produto.nome}}</option>   
-        {% endfor %}
-    </select>
-    </br>
-    <p>Quantidade</p> 
-    <input type="text" label="Quantidade">
-    </br>
-    <p>Preço medio na sua cidade</p>
-    <input type="text" label="preço medio">
+    <div id="formulario">
+        <label>Escolha o produto</label>
+        </br>
+        <select name="Carnes">
+            {% for produto in produtos%}
+                <option>{{produto.nome}}</option>   
+            {% endfor %}
+        </select>
+        </br>
+        <p>Quantidade</p> 
+        <input type="text" label="Quantidade">
+        </br>
+        <p>Preço medio na sua cidade</p>
+        <input type="text" label="preço medio">
+    </div>
 </body>
 
 
